@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.nav {
+  border-top: 1px solid #adadad;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 500;
+  padding: 0.2rem 0;
+  background-color: rgb(253, 252, 252);
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    &.active {
+      color: orange;
+    }
+  }
+}
+
+.am-modal-mask{
+  top: 1.3rem;
+}
+.am-modal-popup{
+  top: 0.85rem;
+}
+.modal_ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
+  padding-top: 0.4rem;
+  justify-content: space-around;
+  .modal_li{
+      padding: 0.3rem 0;
+      width: 33%;
+      span{
+          font-size: 0.6rem;
+          color: #ff443d;
+      }
+      .ico_name{
+          color: #666;
+          padding: 0.1rem 0;
+      }
+  }
+}
+
+.mybook{
+  padding: 0 1rem;
+  .btn{
+      padding: 0.15rem 0.5rem;
+      color: #fff;
+      background-color: #ff443d;
+      border-radius: 0.4rem;
+  }
+}

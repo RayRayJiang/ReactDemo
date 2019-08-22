@@ -1,0 +1,94 @@
+.detail{
+    padding-bottom: 0.5rem;
+
+    .content{
+        padding: 0.4rem 0.3rem;
+        background-color: #fff;
+        .top{
+            display: flex;
+            padding-bottom: 0.3rem;
+            .bookimg{
+                width: 1.6rem;
+                height: 2rem;
+            }
+            .book_cell{
+                display: flex;
+                flex-direction: column;
+                padding: 0.2rem 0.3rem;
+                text-align: left;
+                .name{
+                    font-size: .35rem;
+                }
+                p{  
+                    color: #1a1a1a;
+                    padding: 0.06rem 0;
+                }
+            }
+        }
+        .btn_group{
+            display: flex;
+            padding: 0 0.3rem;
+            justify-content: space-between;
+            align-items: center;
+            color: #8f8f8f;
+            li{
+                border: 0.5px solid #8f8f8f;
+                padding: 0.1rem 0.15rem;
+            }
+            li:nth-child(1){
+                color: #fff;
+                background-color: #ff3955;
+                border-color: #FF3955;
+            }
+        }
+        .bookdesc{
+            color: #686868;
+            padding: 0.5rem 0.3rem;
+            margin-top: 0.5rem;
+            text-align: left;
+            border-top: 1px solid #aaaaaa;
+            border-bottom: 1px solid #aaaaaa;
+            line-height: 0.5rem;
+        }    
+    }
+
+    .ticket_ul{
+        display: flex;
+        padding: 0.2rem 0.3rem;
+        justify-content: space-around;
+        margin-top: 0.3rem;
+        background-color: #fff;
+        span{
+            font-size: 0.5rem;
+            color: #ff3955;
+        }
+        .iconame{
+            padding-top: 0.2rem;
+        }
+    }
+
+    .title{
+        background-color: #fff;
+        margin-top: 0.3rem;
+        h3{
+            font-size: 0.3rem;
+            text-align: left;
+            padding: 0.3rem;
+        }
+        .book_review{
+            color: #686868;
+            padding: 1.5rem 0;
+            border-top: 1px solid #aaaaaa;
+            border-bottom: 1px solid #aaaaaa;
+            p{
+                font-size: 1rem;
+                padding-bottom: 0.2rem;
+            }
+        }
+        .bottom{
+            color: #FF3955;
+            padding: 0.3rem 0;
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+.slider-frame{
+    touch-action: none;
+}
+.swpimg{
+    border-radius: .2rem;
+    height: 3rem;
+}
+.am-carousel-wrap-dot{
+    span{
+        width: 0.1rem;
+        height: 0.1rem;
+    }
+    &.am-carousel-wrap-dot-active > span{
+        background-color: #ff5353;
+    }
+}

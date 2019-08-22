@@ -1,0 +1,77 @@
+.mycenter{
+    .center_header{
+        height: 3.5rem;
+        background: #FF3955 url(../../assets/images/bgc.jpg) no-repeat center;
+        text-align: center;
+        color: #FFF;
+        font-size: 0.3rem;
+        overflow: hidden;
+        background-size: cover;
+        .center_img{
+            padding-top: 1rem;
+            .myimg{
+                width: 1.2rem;
+                height: 1.2rem;
+                border-radius: 50%;
+            }
+        }
+        .user_name{
+            padding: 0.3rem 0;
+        }
+    }
+
+    .btn_group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.1rem 1rem;
+        background-color: #fff;
+        color: #4b4b4b;
+        .btn_li{
+            padding: 0.3rem 0;
+            span{
+                font-size: 0.4rem;
+            }
+            .num{
+                font-size: 0.25rem;
+                padding: 0.2rem 0;
+            }
+        }
+    }
+
+    .nav{
+        padding: 0 0.4rem;
+        background: #fff;
+        margin: 0.2rem 0;
+        .nav_li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #b8b8b8;
+            em{
+                font-size: .4rem;
+                color: #FF3955;
+            }
+            span{
+                font-size: .3rem;
+                font-weight: bold;
+                padding-left: 0.3rem;
+            }
+            .right{
+                font-size: .45rem;
+                color: #a7a7a7;
+            }
+        }
+        li:nth-child(5){
+            border-bottom: none;
+        }
+    }
+
+    .quit_btn{
+        font-size: 0.3rem;
+        color: red;
+        padding: 0.4rem 0;
+        background-color: #fff;
+    }
+}

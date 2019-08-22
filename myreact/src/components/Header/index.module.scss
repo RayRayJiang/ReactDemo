@@ -1,0 +1,21 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    padding: 0.2rem;
+    background-color: #fff;
+    justify-content: space-between;
+    span{
+        font-size: .4rem;
+        color: #FF3955;
+        padding-right: 0.2rem;
+    }
+    .toback{
+        .bookname{
+            color: #666;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.slide_list{
+    .slide_header{
+        padding: 0.3rem .2rem;
+        text-align-last: left;
+        .slide_title{
+            color: #1a1a1a;
+            font-size: 0.35rem;
+            padding: 0 0.2rem;
+            text-align: left;
+            border-left: 0.05rem solid #FF3955;
+        }
+    }
+
+    .type_ul{
+        display: flex;
+        padding: 0.3rem 0;
+        justify-content: center;
+        align-items: center;
+        .type_li{
+            width: 25%;
+            padding: 0.1rem 0.3rem;
+            border: 1px solid #FF3955;
+            color: #FF3955;
+            &.active{
+                background-color: #FF3955;
+                color: #fff;
+            }
+        }
+        .type_li:nth-child(2){
+            border-left: none;
+            border-right: none;
+        }
+        .type_li:nth-child(3){
+            border-right: none;
+        }
+        .type_li:nth-child(1){
+            border-radius: 4px 0 0 4px;
+        }
+        .type_li:nth-child(4){
+            border-radius: 0 4px 4px 0;
+        }
+    }
+
+    .slide_ul{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        .slide_li{
+            padding: 0.1rem 0.15rem;
+            width: 1.5rem;
+            height: 3.3rem;
+            white-space: normal;
+            .slide_img{
+                width: inherit;
+                height: 1.9rem;
+            }
+            .book_name{
+                font-size: 0.2rem;
+                color: #4d4b4b;
+                padding: 0.15rem 0;
+                text-align: left;
+                line-height: 0.33rem;
+            }
+            .writer{
+                font-size: 0.18rem;
+                color: #797979;
+                text-align: left;
+            }
+        }
+    }
+}

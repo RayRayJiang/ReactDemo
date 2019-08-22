@@ -1,0 +1,75 @@
+.home{
+    padding: 0 0.2rem;
+    background-color: #fff;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        align-items: center;
+        color: #ff5858;
+        padding: 0.15rem .1rem;
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        span{
+            font-size: 0.4rem;
+        }
+        .logo{
+            width: 2.1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .logotext{
+                font-size: .25rem;
+                color: #666;
+            }
+        }
+        .rightico{
+            width: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .search{
+        padding: 0.15rem 0;
+        background-color: #eee;
+        margin: 0.1rem 0;
+        border-radius: 0.1rem;
+        .iconbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .msg{
+                color: #797979;
+                padding: 0 0.1rem;
+            }
+            span{
+                color: #797979;
+            }
+        }
+    }
+
+    .navlist{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.3rem 0;
+        .nav{
+            display: flex;
+            flex-direction: column;
+            span{
+                color: #ffba4b;
+                font-size: 0.45rem;
+            }
+            .navname{
+                font-size: 0.25rem;
+                padding-top: 0.2rem;
+                color: #666;
+            }
+        }
+    }
+
+}   
