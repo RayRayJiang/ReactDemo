@@ -7,7 +7,7 @@ import styles from './index.module.scss';
     如果被比较的数据一直在变，还不如用回原来的普通组件，因为浅比较涉及到计算，比较消耗性能
     如果需要进行深比较，请在shouldComponentUpdate中添加判断逻辑
 */
-
+                            
 class BackTop extends PureComponent {
     constructor(){        
         super()

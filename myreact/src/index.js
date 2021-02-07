@@ -18,7 +18,7 @@ ReactDOM.render(
     <Provider store={store}>
         <GlobelProvider value={{
             axios,
-            commonUrl: (process.env.NODE_ENV == 'development') ? 'http://192.168.50.93:8889' : 'http://47.98.251.7:8889'
+            commonUrl: (process.env.NODE_ENV == 'development') ? 'http://localhost:8889' : 'http://47.98.251.7:8889'
         }}>
             <HashRouter>
                 <App />

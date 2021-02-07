@@ -19,7 +19,7 @@ class SlideModule extends Component {
     chooseType = (item) => {
         this.setState({
             typeName: item,
-        },() => {
+        }, () => {
             this.reqBookType(this.state.typeName)
         })
     }
@@ -28,13 +28,13 @@ class SlideModule extends Component {
         this.context.axios.post('/books/list', {
             bookType: typeName
         }).then((res) => {
-            const { code, msg, list} = res;
-            if(code == 1){
+            const { code, msg, list } = res;
+            if (code == 1) {
                 this.setState({
                     list: list
                 })
-            }else{
-                Toast.fail(msg,2)
+            } else {
+                Toast.fail(msg, 2)
             }
         })
     }
@@ -45,19 +45,19 @@ class SlideModule extends Component {
 
 
     componentDidMount() {
-        if(this.props.typeList){
+        if (this.props.typeList) {
             this.setState({
                 typeName: this.props.typeList[0]
-            },() => {
+            }, () => {
                 this.reqBookType(this.state.typeName)
             })
-        }else{
+        } else {
             this.reqBookType(this.props.slide)
         }
     }
-    
+
     render() {
-        const {slideTitle, typeList} = this.props;
+        const { slideTitle, typeList } = this.props;
         return (
             <div className={styles.slide_list}>
                 {
@@ -70,8 +70,8 @@ class SlideModule extends Component {
                 {
                     typeList && <ul className={styles.type_ul}>
                         {
-                            typeList.map((e,i) => {
-                                return <li className={classnames(styles.type_li, {[styles.active]: this.state.typeName == e})} key={i} onClick={() => this.chooseType(e)}>{e}</li>
+                            typeList.map((e, i) => {
+                                return <li className={classnames(styles.type_li, { [styles.active]: this.state.typeName == e })} key={i} onClick={() => this.chooseType(e)}>{e}</li>
                             })
                         }
                     </ul>
@@ -81,10 +81,10 @@ class SlideModule extends Component {
                 {
                     this.state.list.length !== 0 && <ul className={styles.slide_ul}>
                         {
-                            this.state.list.map((e,i) => {
-                                return ( 
+                            this.state.list.map((e, i) => {
+                                return (
                                     <li className={styles.slide_li} key={i} onClick={() => this.toDetail(e._id)}>
-                                        <img className={styles.slide_img} src={this.context.commonUrl + e.bookImg} alt=""/>
+                                        <img className={styles.slide_img} src={this.context.commonUrl + e.bookImg} alt="" />
                                         <p className={styles.book_name}>{e.bookName}</p>
                                         <p className={styles.writer}>{e.writer}</p>
                                     </li>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './index.module.scss';
 import './index.scss'
-import { Carousel} from "antd-mobile";
+import { Carousel } from "antd-mobile";
 import { NavLink } from "react-router-dom";
 import ctx from '@/assets/js/ctx';
 import { connect } from "react-redux";
@@ -14,7 +14,7 @@ import BackTop from '@/components/BackTop';
 
 class HomeUI extends Component {
     static contextType = ctx;
-    constructor(){
+    constructor() {
         super()
         this.state = {
             swiperList: [
@@ -30,19 +30,19 @@ class HomeUI extends Component {
     }
 
     toLogin = () => {
-        const {token} = this.props;
-        if(!token){
+        const { token } = this.props;
+        if (!token) {
             this.props.history.push('/user/login')
-        }else{
+        } else {
             this.props.history.push('/mycenter')
         }
     }
 
     toBookShelf = () => {
-        const {token} = this.props;
-        if(!token){
+        const { token } = this.props;
+        if (!token) {
             this.props.history.push('/user/login')
-        }else{
+        } else {
             this.props.history.push('/bookshelf')
         }
     }
@@ -64,22 +64,22 @@ class HomeUI extends Component {
 
                 {/* 轮播图 */}
                 <Carousel
-                // 项目之间的间距，以px为单位
-                cellSpacing={5}
-                // 是否自动切换
-                autoplay
-                // 是否循环播放
-                infinite
-                // 自动切换的时间间隔
-                autoplayInterval={2000}
+                    // 项目之间的间距，以px为单位
+                    cellSpacing={5}
+                    // 是否自动切换
+                    autoplay
+                    // 是否循环播放
+                    infinite
+                    // 自动切换的时间间隔
+                    autoplayInterval={2000}
                 >
                     {
-                        this.state.swiperList.map((e,i) => {
-                            return <img className="swpimg" src={e} key={i} alt="难啊"/>
+                        this.state.swiperList.map((e, i) => {
+                            return <img className="swpimg" src={e} key={i} alt="难啊" />
                         })
                     }
                 </Carousel>
-                
+
                 {/* 搜索框 */}
                 <div className={styles.search}>
                     <div className={styles.iconbox}>
@@ -110,7 +110,7 @@ class HomeUI extends Component {
                         <p className={styles.navname}>完本</p>
                     </NavLink>
                 </div>
-                
+
                 {/* 本期强推 */}
                 <SlideModule slideTitle="本期强推" slide="强推" />
 
@@ -138,7 +138,7 @@ class HomeUI extends Component {
     }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
     return {
         token: state.getToken.token
     }
